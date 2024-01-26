@@ -1,113 +1,107 @@
 <div class="modal-content" aria-modal="true">
 <style type="text/css" id="static">
-        /*Font support for MAC*/
-        @font-face{font-family:'Century Gothic';font-weight:normal;font-style:normal;src:local('Century Gothic'),url('/blobcontent/zty/fonts/CenturyGothic.ttf') format('truetype')}
-        @font-face{font-family:'Century Gothic';font-weight:bold;font-style:normal;src:local('Century Gothic Bold'),url('/blobcontent/zty/fonts/CenturyGothicBold.ttf') format('truetype')}
-        @font-face{font-family:'Century Gothic';font-weight:bold;font-style:italic;src:local('Century Gothic Bold Italic'),url('/blobcontent/zty/fonts/CenturyGothicBoldItalic.ttf') format('truetype')}
-        @font-face{font-family:'Century Gothic';font-weight:normal;font-style:italic;src:local('Century Gothic Italic'),url('/blobcontent/zty/fonts/CenturyGothicItalic.ttf') format('truetype')}
-
         html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}
         body{text-align:left;font-feature-settings:"liga" 0;-moz-font-feature-settings:"liga" off}
-        .skn-srz4 ol,.skn-srz4 ul{list-style:none}
-        .skn-srz4 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+        .page-css ol,.page-css ul{list-style:none}
+        .page-css table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
 
         /*START content disc style for LI*/
-        .skn-srz4 ul,.skn-srz4 li{margin:0;padding:0;list-style-type:disc}
-        .skn-srz4 ul li{margin:0 0 0 16px;padding:0}
-        @-moz-document url-prefix() {.skn-srz4 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+        .page-css ul,.page-css li{margin:0;padding:0;list-style-type:disc}
+        .page-css ul li{margin:0 0 0 16px;padding:0}
+        @-moz-document url-prefix() {.page-css ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
         /*END content disc style for LI*/
 
         /*table style*/
-        .skn-srz4 table.skills,.skn-srz4 .table_wrapper{width:100%;margin-top:0;word-wrap:break-word}
-        .skn-srz4 table.skills th,.skn-srz4 table.skills td{width:20%;text-align:center}
-        .skn-srz4 table.skills .skillname,.skn-srz4 table.skills .skillrating{text-align:left;width:35%}
-        .skn-srz4 table.skills .skillrating{width:20%}
-        .skn-srz4 table.skills .skillyears,.skn-srz4 table.skills .skilllast{width:19%}
-        .skn-srz4 table.skills .pad1{width:5%}
-        .skn-srz4 .skills .pad2,.skn-srz4 table.skills .pad3{width:1%}
+        .page-css table.skills,.page-css .table_wrapper{width:100%;margin-top:0;word-wrap:break-word}
+        .page-css table.skills th,.page-css table.skills td{width:20%;text-align:center}
+        .page-css table.skills .skillname,.page-css table.skills .skillrating{text-align:left;width:35%}
+        .page-css table.skills .skillrating{width:20%}
+        .page-css table.skills .skillyears,.page-css table.skills .skilllast{width:19%}
+        .page-css table.skills .pad1{width:5%}
+        .page-css .skills .pad2,.page-css table.skills .pad3{width:1%}
 
         /* document */
-        .skn-srz4{box-sizing:border-box;color:#343434;font-variant-ligatures:none;line-height:16px;min-height:792px;word-wrap:break-word}
-        .skn-srz4 .name{color:#fff;font-weight:700;position:relative;text-align:left;word-wrap:break-word}
-        .skn-srz4 .address .singlecolumn{margin-left:0!important}
-        .skn-srz4 .heading{border-bottom:1px solid #d5d6d6;font-weight:700;letter-spacing:0;line-height:15px;margin-bottom:10px;padding:0 0 3px}
-        .skn-srz4 .sectiontitle{color:#252932;word-wrap:break-word}
-        .skn-srz4 .degreeGap{margin-bottom:4px}
-        .skn-srz4 .locationGap{margin-top:4px}
-        .skn-srz4 .firstparagraph{margin-top:0!important}
-        .skn-srz4 .topsection{background:#373d48;padding:15px 15px 20px}
-        .skn-srz4 .section:empty,.skn-srz4 .hide-bar .ratingWrapper .noLnht,.skn-srz4 .hide-bar .field-ratt, .skn-srz4 .hide-bar .ratingWrapper .paddedline{display:none}
-        .skn-srz4 .education .joblocation{font-style:italic}
-        .skn-srz4 .parentContainer{border-collapse:collapse;display:table;min-height:inherit;padding-bottom:20px;table-layout:fixed;width:100%}
-        .skn-srz4 .resumeTitle{color:#fff;padding-top:7px}
+        .page-css{box-sizing:border-box;color:#343434;font-variant-ligatures:none;line-height:16px;min-height:792px;word-wrap:break-word}
+        .page-css .name{color:#fff;font-weight:700;position:relative;text-align:left;word-wrap:break-word}
+        .page-css .address .singlecolumn{margin-left:0!important}
+        .page-css .heading{border-bottom:1px solid #d5d6d6;font-weight:700;letter-spacing:0;line-height:15px;margin-bottom:10px;padding:0 0 3px}
+        .page-css .sectiontitle{color:#252932;word-wrap:break-word}
+        .page-css .degreeGap{margin-bottom:4px}
+        .page-css .locationGap{margin-top:4px}
+        .page-css .firstparagraph{margin-top:0!important}
+        .page-css .topsection{background:#373d48;padding:15px 15px 20px}
+        .page-css .section:empty,.page-css .hide-bar .ratingWrapper .noLnht,.page-css .hide-bar .field-ratt, .page-css .hide-bar .ratingWrapper .paddedline{display:none}
+        .page-css .education .joblocation{font-style:italic}
+        .page-css .parentContainer{border-collapse:collapse;display:table;min-height:inherit;padding-bottom:20px;table-layout:fixed;width:100%}
+        .page-css .resumeTitle{color:#fff;padding-top:7px}
 
         /*left and right css*/
-        .skn-srz4 .right-box,.skn-srz4 .left-box{padding:15px}
-        .skn-srz4 .right-box{background-color:#f4f4f4;box-sizing:content-box;display:table-cell;letter-spacing:.2px;vertical-align:top}
-        .skn-srz4 .left-box .paddedline.date-content{position:absolute;font-weight:700;margin-left:0;width:80px}
-        .skn-srz4 .paragraph .singlecolumn{position:relative}
-        .skn-srz4 .left-box .summary .paragraph .singlecolumn{margin-left:0!important}
-        .skn-srz4 .left-box{display:table-cell;letter-spacing:.2px;vertical-align:top}
-        .skn-srz4 .firstsection,.skn-srz4 .left-box .section:first-child,.skn-srz4 .right-box .section:first-child{padding-top:0!important}
+        .page-css .right-box,.page-css .left-box{padding:15px}
+        .page-css .right-box{background-color:#f4f4f4;box-sizing:content-box;display:table-cell;letter-spacing:.2px;vertical-align:top}
+        .page-css .left-box .paddedline.date-content{position:absolute;font-weight:700;margin-left:0;width:80px}
+        .page-css .paragraph .singlecolumn{position:relative}
+        .page-css .left-box .summary .paragraph .singlecolumn{margin-left:0!important}
+        .page-css .left-box{display:table-cell;letter-spacing:.2px;vertical-align:top}
+        .page-css .firstsection,.page-css .left-box .section:first-child,.page-css .right-box .section:first-child{padding-top:0!important}
 
         /*common css*/
-        .skn-srz4 .txt-bold{font-weight:bold}
-        .skn-srz4 .txtItl{font-style:italic}
-        .skn-srz4 .paddedline{display:block}
-        .skn-srz4 .mt5{margin-top:5px}
-        .skn-srz4 .word-break{word-wrap:break-word}
-        .skn-srz4 .ratingWrapper{text-align:right;position:relative}
-        .skn-srz4 .ratingWrapper .noLnht{line-height:0}
-        .skn-srz4 svg{height:13px}
+        .page-css .txt-bold{font-weight:bold}
+        .page-css .txtItl{font-style:italic}
+        .page-css .paddedline{display:block}
+        .page-css .mt5{margin-top:5px}
+        .page-css .word-break{word-wrap:break-word}
+        .page-css .ratingWrapper{text-align:right;position:relative}
+        .page-css .ratingWrapper .noLnht{line-height:0}
+        .page-css svg{height:13px}
 
         /*Personal details section*/
-        .skn-srz4 .details-wrap{margin-bottom:5px} 
-        .skn-srz4 .details-wrap:last-child{margin-bottom:0}
+        .page-css .details-wrap{margin-bottom:5px} 
+        .page-css .details-wrap:last-child{margin-bottom:0}
 
-        .skn-srz4 > div:not(.topsection){min-height:inherit}
+        .page-css > div:not(.topsection){min-height:inherit}
         /* Issues fix for builder page */
-        .skn-srz4 .ratingWrapper .default-fill{fill:#373d48}
+        .page-css .ratingWrapper .default-fill{fill:#373d48}
 		
 
         /* Only for firefox */
-        @-moz-document url-prefix() {.skn-srz4 .parentContainer{height:1px}}
+        @-moz-document url-prefix() {.page-css .parentContainer{height:1px}}
 
         /* For dates fix */
-        .skn-srz4 .left-box .hidedates{visibility:hidden;position:static!important;display:block;float:left}
-        .skn-srz4 .right-box .hidedates{display:none}
-        .skn-srz4 .paragraph.datespara:after{content:'';display:table;clear:both}
+        .page-css .left-box .hidedates{visibility:hidden;position:static!important;display:block;float:left}
+        .page-css .right-box .hidedates{display:none}
+        .page-css .paragraph.datespara:after{content:'';display:table;clear:both}
 
         /*PICT*/
-        .skn-srz4 .prflPic,.skn-srz4 .prflPic > div{width:154px;height:154px}
-        .skn-srz4 .prflPic img{min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover}
+        .page-css .prflPic,.page-css .prflPic > div{width:154px;height:154px}
+        .page-css .prflPic img{min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover}
     </style><style type="text/css" id="dynamic" data-time="Thu Jan 25 2024 10:27:32 GMT-0800 (Pacific Standard Time)">
-        .skn-srz4,.skn-srz4 table{line-height:18px}
-        /*.skn-srz4.pagesize{width:612px}*/
-        .skn-srz4.fontface{font-family:Century Gothic}
-        .skn-srz4.fontsize{font-size:14px}
-        .skn-srz4 .section{padding-top:20px}
-        .skn-srz4 .right-box .section:after{padding-bottom:10px}
-        .skn-srz4 .paragraph{margin-top:10px}
-        .skn-srz4 .singlecolumn,.skn-srz4 .maincolumn{word-wrap:break-word}
-        .skn-srz4 .left-box .singlecolumn,.skn-srz4 .left-box maincolumn{margin-left:0px}
-        .skn-srz4 table.skills td{padding-top:5px}
-        .skn-srz4 .jobtitle,.skn-srz4 .degree,.skn-srz4 .programline{font-size:16px}
-        .skn-srz4 .name{font-size:36px;line-height:39px}
-        .skn-srz4 .topsection{background-color:#373d48}
-        .skn-srz4 .heading{line-height:22px}
-        .skn-srz4 .sectiontitle{font-size:18px;color:#373d48}
-        .skn-srz4 .right-box{width:180px}
-        .skn-srz4 .left-box .paragraph .singlecolumn{margin-left:91px}
-        .skn-srz4 .left-box .paddedline.date-content{left:-91px}
-        .skn-srz4 .resumeTitle{font-size:20px}
-		.skn-srz4 .ratingWrapper .default-fill{fill:#373d48}
+        .page-css,.page-css table{line-height:18px}
+        /*.page-css.pagesize{width:612px}*/
+        .page-css.fontface{font-family:Century Gothic}
+        .page-css.fontsize{font-size:14px}
+        .page-css .section{padding-top:20px}
+        .page-css .right-box .section:after{padding-bottom:10px}
+        .page-css .paragraph{margin-top:10px}
+        .page-css .singlecolumn,.page-css .maincolumn{word-wrap:break-word}
+        .page-css .left-box .singlecolumn,.page-css .left-box maincolumn{margin-left:0px}
+        .page-css table.skills td{padding-top:5px}
+        .page-css .jobtitle,.page-css .degree,.page-css .programline{font-size:16px}
+        .page-css .name{font-size:36px;line-height:39px}
+        .page-css .topsection{background-color:#373d48}
+        .page-css .heading{line-height:22px}
+        .page-css .sectiontitle{font-size:18px;color:#373d48}
+        .page-css .right-box{width:180px}
+        .page-css .left-box .paragraph .singlecolumn{margin-left:91px}
+        .page-css .left-box .paddedline.date-content{left:-91px}
+        .page-css .resumeTitle{font-size:20px}
+		.page-css .ratingWrapper .default-fill{fill:#373d48}
 
         /*fixes for builder page*/
-		#displayResume .skn-srz4.document{min-height:792px}
-        .skn-srz4 .sortable-item .rating-wrapper span{top:0}
-        .skn-srz4 .left-box > .sortable-item,.skn-srz4 .right-box > .sortable-item{padding-top:20px}
-		html.c-rowloc-in.hide-photo .skn-srz4 .right-box .sortable-item.data-PICT + .sortable-item{padding-top:0px !important}
-    </style></div><div class="document doc-root fontsize fontface vmargins hmargins   pagesize skn-srz4 SRZ4  ZTY   "><div id="CONTAINER_PARENT_0" class="topsection"><div id="CONTAINER_0" class=""><div data-react-beautiful-dnd-draggable="4" class="sortable-item section-container SortableItem-sibling  data-NAME"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_NAMEea1d3306-768b-4575-bdbd-5599e0cfa8b4" class="section notdraggable SECTION_NAME firstsection    " data-section-cd="NAME"><div class=" doc-item"><div class=""><div class=""><div id="PARAGRAPH_NAME_178b3491-f70e-384c-5cc2-cec841beb530" class="paragraph PARAGRAPH_NAME firstparagraph  "><div>
+		#displayResume .page-css.document{min-height:792px}
+        .page-css .sortable-item .rating-wrapper span{top:0}
+        .page-css .left-box > .sortable-item,.page-css .right-box > .sortable-item{padding-top:20px}
+		html.c-rowloc-in.hide-photo .page-css .right-box .sortable-item.data-PICT + .sortable-item{padding-top:0px !important}
+    </style></div><div class="document doc-root fontsize fontface vmargins hmargins   pagesize page-css"><div id="CONTAINER_PARENT_0" class="topsection"><div id="CONTAINER_0" class=""><div data-react-beautiful-dnd-draggable="4" class="sortable-item section-container SortableItem-sibling  data-NAME"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_NAMEea1d3306-768b-4575-bdbd-5599e0cfa8b4" class="section notdraggable SECTION_NAME firstsection    " data-section-cd="NAME"><div class=" doc-item"><div class=""><div class=""><div id="PARAGRAPH_NAME_178b3491-f70e-384c-5cc2-cec841beb530" class="paragraph PARAGRAPH_NAME firstparagraph  "><div>
                         <div class="name word-break">
                             <span id="FIELD_FNAM">Pramod</span>
                             <span class="word-break" id="FIELD_LNAM">Singh</span>
