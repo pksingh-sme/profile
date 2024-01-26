@@ -1,0 +1,480 @@
+<div class="modal-content" aria-modal="true">
+<style type="text/css" id="static">
+        /*Font support for MAC*/
+        @font-face{font-family:'Century Gothic';font-weight:normal;font-style:normal;src:local('Century Gothic'),url('/blobcontent/zty/fonts/CenturyGothic.ttf') format('truetype')}
+        @font-face{font-family:'Century Gothic';font-weight:bold;font-style:normal;src:local('Century Gothic Bold'),url('/blobcontent/zty/fonts/CenturyGothicBold.ttf') format('truetype')}
+        @font-face{font-family:'Century Gothic';font-weight:bold;font-style:italic;src:local('Century Gothic Bold Italic'),url('/blobcontent/zty/fonts/CenturyGothicBoldItalic.ttf') format('truetype')}
+        @font-face{font-family:'Century Gothic';font-weight:normal;font-style:italic;src:local('Century Gothic Italic'),url('/blobcontent/zty/fonts/CenturyGothicItalic.ttf') format('truetype')}
+
+        html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}
+        body{text-align:left;font-feature-settings:"liga" 0;-moz-font-feature-settings:"liga" off}
+        .skn-srz4 ol,.skn-srz4 ul{list-style:none}
+        .skn-srz4 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+
+        /*START content disc style for LI*/
+        .skn-srz4 ul,.skn-srz4 li{margin:0;padding:0;list-style-type:disc}
+        .skn-srz4 ul li{margin:0 0 0 16px;padding:0}
+        @-moz-document url-prefix() {.skn-srz4 ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+        /*END content disc style for LI*/
+
+        /*table style*/
+        .skn-srz4 table.skills,.skn-srz4 .table_wrapper{width:100%;margin-top:0;word-wrap:break-word}
+        .skn-srz4 table.skills th,.skn-srz4 table.skills td{width:20%;text-align:center}
+        .skn-srz4 table.skills .skillname,.skn-srz4 table.skills .skillrating{text-align:left;width:35%}
+        .skn-srz4 table.skills .skillrating{width:20%}
+        .skn-srz4 table.skills .skillyears,.skn-srz4 table.skills .skilllast{width:19%}
+        .skn-srz4 table.skills .pad1{width:5%}
+        .skn-srz4 .skills .pad2,.skn-srz4 table.skills .pad3{width:1%}
+
+        /* document */
+        .skn-srz4{box-sizing:border-box;color:#343434;font-variant-ligatures:none;line-height:16px;min-height:792px;word-wrap:break-word}
+        .skn-srz4 .name{color:#fff;font-weight:700;position:relative;text-align:left;word-wrap:break-word}
+        .skn-srz4 .address .singlecolumn{margin-left:0!important}
+        .skn-srz4 .heading{border-bottom:1px solid #d5d6d6;font-weight:700;letter-spacing:0;line-height:15px;margin-bottom:10px;padding:0 0 3px}
+        .skn-srz4 .sectiontitle{color:#252932;word-wrap:break-word}
+        .skn-srz4 .degreeGap{margin-bottom:4px}
+        .skn-srz4 .locationGap{margin-top:4px}
+        .skn-srz4 .firstparagraph{margin-top:0!important}
+        .skn-srz4 .topsection{background:#373d48;padding:15px 15px 20px}
+        .skn-srz4 .section:empty,.skn-srz4 .hide-bar .ratingWrapper .noLnht,.skn-srz4 .hide-bar .field-ratt, .skn-srz4 .hide-bar .ratingWrapper .paddedline{display:none}
+        .skn-srz4 .education .joblocation{font-style:italic}
+        .skn-srz4 .parentContainer{border-collapse:collapse;display:table;min-height:inherit;padding-bottom:20px;table-layout:fixed;width:100%}
+        .skn-srz4 .resumeTitle{color:#fff;padding-top:7px}
+
+        /*left and right css*/
+        .skn-srz4 .right-box,.skn-srz4 .left-box{padding:15px}
+        .skn-srz4 .right-box{background-color:#f4f4f4;box-sizing:content-box;display:table-cell;letter-spacing:.2px;vertical-align:top}
+        .skn-srz4 .left-box .paddedline.date-content{position:absolute;font-weight:700;margin-left:0;width:65px}
+        .skn-srz4 .paragraph .singlecolumn{position:relative}
+        .skn-srz4 .left-box .summary .paragraph .singlecolumn{margin-left:0!important}
+        .skn-srz4 .left-box{display:table-cell;letter-spacing:.2px;vertical-align:top}
+        .skn-srz4 .firstsection,.skn-srz4 .left-box .section:first-child,.skn-srz4 .right-box .section:first-child{padding-top:0!important}
+
+        /*common css*/
+        .skn-srz4 .txt-bold{font-weight:bold}
+        .skn-srz4 .txtItl{font-style:italic}
+        .skn-srz4 .paddedline{display:block}
+        .skn-srz4 .mt5{margin-top:5px}
+        .skn-srz4 .word-break{word-wrap:break-word}
+        .skn-srz4 .ratingWrapper{text-align:right;position:relative}
+        .skn-srz4 .ratingWrapper .noLnht{line-height:0}
+        .skn-srz4 svg{height:13px}
+
+        /*Personal details section*/
+        .skn-srz4 .details-wrap{margin-bottom:5px} 
+        .skn-srz4 .details-wrap:last-child{margin-bottom:0}
+
+        .skn-srz4 > div:not(.topsection){min-height:inherit}
+        /* Issues fix for builder page */
+        .skn-srz4 .ratingWrapper .default-fill{fill:#373d48}
+		
+
+        /* Only for firefox */
+        @-moz-document url-prefix() {.skn-srz4 .parentContainer{height:1px}}
+
+        /* For dates fix */
+        .skn-srz4 .left-box .hidedates{visibility:hidden;position:static!important;display:block;float:left}
+        .skn-srz4 .right-box .hidedates{display:none}
+        .skn-srz4 .paragraph.datespara:after{content:'';display:table;clear:both}
+
+        /*PICT*/
+        .skn-srz4 .prflPic,.skn-srz4 .prflPic > div{width:154px;height:154px}
+        .skn-srz4 .prflPic img{min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover}
+    </style><style type="text/css" id="dynamic" data-time="Thu Jan 25 2024 10:27:32 GMT-0800 (Pacific Standard Time)">
+        .skn-srz4,.skn-srz4 table{line-height:18px}
+        /*.skn-srz4.pagesize{width:612px}*/
+        .skn-srz4.fontface{font-family:Century Gothic}
+        .skn-srz4.fontsize{font-size:11px}
+        .skn-srz4 .section{padding-top:20px}
+        .skn-srz4 .right-box .section:after{padding-bottom:10px}
+        .skn-srz4 .paragraph{margin-top:10px}
+        .skn-srz4 .singlecolumn,.skn-srz4 .maincolumn{word-wrap:break-word}
+        .skn-srz4 .left-box .singlecolumn,.skn-srz4 .left-box maincolumn{margin-left:0px}
+        .skn-srz4 table.skills td{padding-top:5px}
+        .skn-srz4 .jobtitle,.skn-srz4 .degree,.skn-srz4 .programline{font-size:14px}
+        .skn-srz4 .name{font-size:36px;line-height:39px}
+        .skn-srz4 .topsection{background-color:#373d48}
+        .skn-srz4 .heading{line-height:22px}
+        .skn-srz4 .sectiontitle{font-size:16px;color:#373d48}
+        .skn-srz4 .right-box{width:154px}
+        .skn-srz4 .left-box .paragraph .singlecolumn{margin-left:91px}
+        .skn-srz4 .left-box .paddedline.date-content{left:-91px}
+        .skn-srz4 .resumeTitle{font-size:18px}
+		.skn-srz4 .ratingWrapper .default-fill{fill:#373d48}
+
+        /*fixes for builder page*/
+		#displayResume .skn-srz4.document{min-height:792px}
+        .skn-srz4 .sortable-item .rating-wrapper span{top:0}
+        .skn-srz4 .left-box > .sortable-item,.skn-srz4 .right-box > .sortable-item{padding-top:20px}
+		html.c-rowloc-in.hide-photo .skn-srz4 .right-box .sortable-item.data-PICT + .sortable-item{padding-top:0px !important}
+    </style></div><div class="document doc-root fontsize fontface vmargins hmargins   pagesize skn-srz4 SRZ4  ZTY   "><div id="CONTAINER_PARENT_0" class="topsection"><div id="CONTAINER_0" class=""><div data-react-beautiful-dnd-draggable="4" class="sortable-item section-container SortableItem-sibling  data-NAME"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_NAMEea1d3306-768b-4575-bdbd-5599e0cfa8b4" class="section notdraggable SECTION_NAME firstsection    " data-section-cd="NAME"><div class=" doc-item"><div class=""><div class=""><div id="PARAGRAPH_NAME_178b3491-f70e-384c-5cc2-cec841beb530" class="paragraph PARAGRAPH_NAME firstparagraph  "><div>
+                        <div class="name word-break">
+                            <span id="FIELD_FNAM">Pramod</span>
+                            <span class="word-break" id="FIELD_LNAM">Singh</span>
+                        </div>
+                        <div class="resumeTitle" id="FIELD_DCTL">Software Engineering Manager</div>
+                    </div></div></div></div></div></div></div></div></div><div id="CONTAINER_PARENT_1" class="parentContainer"><div id="CONTAINER_1" class="left-box"><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-SUMM"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_SUMM1d3a1655-856d-48fc-950b-0ab5c8e7a602" class="section summary notdraggable SECTION_SUMM     " data-section-cd="SUMM"><div class=" doc-item"><div class=""><div class=""><div id="PARAGRAPH_SUMM_d233f395-cc5b-97f9-6653-b90676807803" class="paragraph PARAGRAPH_SUMM firstparagraph  "><div class="clearfix doc-item">
+                        <div class="singlecolumn" id="FIELD_FRFM"><p>Skilled engineering manager builds and motivates high-performing engineering team. Over <span class="ttc_token" style="color:#0000FF">20+</span> years of experience in <span class="ttc_token" style="color:#0000FF"> software industry </span> working with latest technologies in <span class="ttc_token" style="color:#0000FF">web and mobile </span> projects. Committed to rapidly and efficiently completing projects by leveraging team-based frameworks to best leverage available engineering talent. Detail-oriented team player with strong organizational skills. Ability to handle multiple projects simultaneously with a high degree of accuracy.</p></div>
+                    </div></div></div></div></div></div></div><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-EXPR"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_EXPR4791522b-4651-4ab5-a71c-0ab4f052070f" class="section experience SECTION_EXPR   multi-para has-title  " data-section-cd="EXPR"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_EXPR">Work History<span title="Rename Work History section" class="rename-section text-rename"></span></div></div><div class=""><div class="sortableInner"><div id="PARAGRAPH_EXPR_d8215766-7717-5f34-e17a-fd58a35ad52a" class="paragraph datespara PARAGRAPH_EXPR firstparagraph  "><div class="clearfix doc-item">
+                        <div class="paddedline date-content hidedates" dependency="JSTD|EDDT">
+                            <span class="jobdates" dependency="JSTD">2007-03</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" dependency="EDDT">2007-03</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                            <div class="paddedline date-content" dependency="JSTD|EDDT">
+                                <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2022-12</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2023-12</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                            </div>
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txt-bold" id="FIELD_JTIT">Engineering Manager</span>
+                            </span>
+                            <span class="paddedline locationGap txtItl" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">Harvard In Tech</span><span class="jobcity" id="FIELD_JCIT"></span><span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+                            <span class="jobline" id="FIELD_JDES"><ul>
+  <li>Verified construction documentation to meet client requirements and vision.</li>
+  <li>Evaluated project requirements to identify and mitigate risks.</li>
+  <li>Managed design and manufacturing teams to build proprietary process equipment within aggressive cost and time constraints.</li>
+  <li>Tested models of alternate designs and processing methods to assess feasibility and operating condition effects.</li>
+  <li>Performed concurrent design, manufacturing and engineering, reducing time required to bring products to market.</li>
+  <li>Addressed design challenges and evaluated alternative design models to meet project requirements.</li>
+  <li>Interpreted blueprints and technical drawings to analyze upcoming projects.</li>
+  <li>Prepared, checked, and coordinated documentation to support component design and application.</li>
+  <li>Analyzed existing structures to create plans for modifications and improvements.</li>
+  <li>Created innovative solutions to architectural problems, enabling successful project completion.</li>
+  <li>Recruited, placed, and oversaw project staff for optimal project results.</li>
+</ul></span>
+                        </div>
+                    </div></div><div id="PARAGRAPH_EXPR_5ebdc17c-7fff-81f3-9080-aaf4c18cc476" class="paragraph datespara PARAGRAPH_EXPR  "><div class="clearfix doc-item">
+                        <div class="paddedline date-content hidedates" dependency="JSTD|EDDT">
+                            <span class="jobdates" dependency="JSTD">2007-03</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" dependency="EDDT">2007-03</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                            <div class="paddedline date-content" dependency="JSTD|EDDT">
+                                <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2020-10</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2022-11</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                            </div>
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txt-bold" id="FIELD_JTIT">Senior Software Engineering Manager</span>
+                            </span>
+                            <span class="paddedline locationGap txtItl" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">ICREON</span><span class="jobcity" id="FIELD_JCIT"></span><span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+                            <span class="jobline" id="FIELD_JDES"><ul>
+  <li>Integrated prescribed processes and conventions during project planning to align products with internal guidelines.</li>
+  <li>Allied with other engineering leaders to plan, manage and coordinate teams around reaching prescribed development milestones.</li>
+  <li>Cultivated partnerships between engineering, product and UX personnel to create holistically designed final products.</li>
+  <li>Directly interacted with high-level customers to verify satisfaction and integrate feedback on in-process development projects.</li>
+  <li>Drove high-level strategic planning of development efforts across multiple projects to optimize resource utilization and shorten development times.</li>
+  <li>Collaborated with cross-functional teams to integrate specific <span class="ttc_token" style="color:#0000FF">cloud & third party</span> features into finished products.</li>
+  <li>Provided regular feedback to both junior engineers and senior leadership on individual performance metrics and observations.</li>
+  <li>Mentored junior software engineers, providing careful guidance of development strategies and education on innovative development techniques.</li>
+  <li>Implemented and maintained technology and software budget.</li>
+  <li>Led technical upgrade projects for clients by working and coordinating with consultants and developers for integrations.</li>
+  <li>Communicated regularly with customers concerning data exchange and technology integration.</li>
+</ul></span>
+                        </div>
+                    </div></div><div id="PARAGRAPH_EXPR_ed3274a5-8f6e-8338-0286-06780ea42439" class="paragraph datespara PARAGRAPH_EXPR  "><div class="clearfix doc-item">
+                        <div class="paddedline date-content hidedates" dependency="JSTD|EDDT">
+                            <span class="jobdates" dependency="JSTD">2007-03</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" dependency="EDDT">2007-03</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                            <div class="paddedline date-content" dependency="JSTD|EDDT">
+                                <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2017-04</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2020-09</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                            </div>
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txt-bold" id="FIELD_JTIT">Software Engineering Manager</span>
+                            </span>
+                            <span class="paddedline locationGap txtItl" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">ICREON</span><span class="jobcity" id="FIELD_JCIT"></span><span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+                            <span class="jobline" id="FIELD_JDES"><ul>
+  <li>Provided regular feedback to both junior engineers and senior leadership on individual performance metrics and observations.</li>
+  <li>Directly interacted with high-level customers to verify satisfaction and integrate feedback on in-process development projects.</li>
+  <li>Led development on 3 simultaneous projects, multi-tasking across several deliverables while remaining in direct control of development paths.</li>
+  <li>Evaluated ongoing development efforts, providing feedback on potential methods of expediting completion and improving final results.</li>
+  <li>Drove high-level strategic planning of development efforts across multiple projects to optimize resource utilization and shorten development times.</li>
+  <li>Led technical upgrade projects for clients by working and coordinating with consultants and developers for integrations.</li>
+  <li>Implemented and maintained technology and software budget.</li>
+  <li>Coordinated secure system access of users to various department systems and platforms.</li>
+  <li>Oversaw development and implementation of improvements to support network operations.</li>
+  <li>Wrote strategic business plans outlining need for departmental information technology resources.</li>
+  <li>Mentored junior software engineers, providing careful guidance of development strategies and education on innovative development techniques.</li>
+  <li>Cultivated partnerships between engineering, product and UX personnel to create holistically designed final products.</li>
+</ul></span>
+                        </div>
+                    </div></div><div id="PARAGRAPH_EXPR_1ddef972-cae9-5cb2-3d39-4cd35363ee65" class="paragraph datespara PARAGRAPH_EXPR  "><div class="clearfix doc-item">
+                        <div class="paddedline date-content hidedates" dependency="JSTD|EDDT">
+                            <span class="jobdates" dependency="JSTD">2007-03</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" dependency="EDDT">2007-03</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                            <div class="paddedline date-content" dependency="JSTD|EDDT">
+                                <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2016-01</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2017-03</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                            </div>
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txt-bold" id="FIELD_JTIT">Software Development Manager</span>
+                            </span>
+                            <span class="paddedline locationGap txtItl" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">ICREON</span><span class="jobcity" id="FIELD_JCIT"></span><span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+                            <span class="jobline" id="FIELD_JDES"><ul>
+  <li>Led organization-wide technology strategy development.</li>
+  <li>Built inter-team collaboration guidelines to reduce dependence and redundancy and accelerate development efforts by integrating diverse developer voices.</li>
+  <li>Led sprint planning, reviews and retrospectives.</li>
+  <li>Delivered project reports and milestone updates to supervisor.</li>
+  <li>Stayed up to date on modern practice advances while applying best-in-class software development with existing technology.</li>
+  <li>Researched and implemented new technological tools to optimize business process workflows.</li>
+  <li>Worked with developers to identify and remove software bugs.</li>
+  <li>Developed reports using SQL server reporting services.</li>
+  <li>Monitored development efforts to maintain high levels of quality control and reduce impact of unforeseen issues.</li>
+  <li>Mentored junior developers and engineers through onboarding process and long-term team contributions.</li>
+  <li>Reviewed code to check compliance with company coding guidelines.</li>
+  <li>Trained engineers in standards and strategies for optimal product development.</li>
+  <li>Reviewed and revised technical design direction for mobile projects, prioritizing senior leadership's business goals.</li>
+</ul></span>
+                        </div>
+                    </div></div><div id="PARAGRAPH_EXPR_abaa7adb-5461-a576-5533-98f7ca24751c" class="paragraph datespara PARAGRAPH_EXPR  "><div class="clearfix doc-item">
+                        <div class="paddedline date-content hidedates" dependency="JSTD|EDDT">
+                            <span class="jobdates" dependency="JSTD">2007-03</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" dependency="EDDT">2007-03</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                            <div class="paddedline date-content" dependency="JSTD|EDDT">
+                                <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2012-10</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2015-12</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                            </div>
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txt-bold" id="FIELD_JTIT">Technical Lead Engineer</span>
+                            </span>
+                            <span class="paddedline locationGap txtItl" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">ICREON</span><span class="jobcity" id="FIELD_JCIT"></span><span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+                            <span class="jobline" id="FIELD_JDES"><ul>
+  <li>Executed troubleshooting and server support in both in-person and remote situations.</li>
+  <li>Provided secondary training to personnel struggling with technological tools and systems.</li>
+  <li>Identified and corrected system faults to minimize operational system downtime.</li>
+  <li>Produced reports on success rates and remedial requirements.</li>
+  <li>Wrote instruction manuals and technical guidance for preventive maintenance of e-commerce web applications.</li>
+  <li>Diagnosed malfunctions in web applications, directing support tickets to appropriate personnel for remediation.</li>
+  <li>Monitored ongoing technical compliance with applicable laws and regulations.</li>
+  <li>Led technical upgrade projects for clients by working and coordinating with consultants and developers for integrations.</li>
+  <li>Communicated regularly with customers concerning data exchange and technology integration.</li>
+  <li>Implemented and maintained technology and software budget.</li>
+  <li>Oversaw quality assurance management and offered suggested recommendations.</li>
+</ul></span>
+                        </div>
+                    </div></div><div id="PARAGRAPH_EXPR_04634fb5-3afd-4e11-48b0-f45b41ea85bc" class="paragraph datespara PARAGRAPH_EXPR  "><div class="clearfix doc-item">
+                        <div class="paddedline date-content hidedates" dependency="JSTD|EDDT">
+                            <span class="jobdates" dependency="JSTD">2007-03</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" dependency="EDDT">2007-03</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                            <div class="paddedline date-content" dependency="JSTD|EDDT">
+                                <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2010-10</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2012-09</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                            </div>
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txt-bold" id="FIELD_JTIT">Senior Software Engineer</span>
+                            </span>
+                            <span class="paddedline locationGap txtItl" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">ICREON</span><span class="jobcity" id="FIELD_JCIT"></span><span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+                            <span class="jobline" id="FIELD_JDES"><ul>
+  <li>Worked with project managers, developers, quality assurance and customers to resolve technical issues.</li>
+  <li>Led software development initiative as subject matter expert and primary point-of-contact for project management staff.</li>
+  <li>Trained and mentored junior developers and engineers, teaching skills in PHP, MySQL, Javascript, HTML, CSS and working to improve overall team performance.</li>
+  <li>Checked client code for bugs and weaknesses using approved troubleshooting methods.</li>
+</ul></span>
+                        </div>
+                    </div></div><div id="PARAGRAPH_EXPR_d6ce756d-8f09-b778-34dc-870dfd946438" class="paragraph datespara PARAGRAPH_EXPR  "><div class="clearfix doc-item">
+                        <div class="paddedline date-content hidedates" dependency="JSTD|EDDT">
+                            <span class="jobdates" dependency="JSTD">2007-03</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" dependency="EDDT">2007-03</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                            <div class="paddedline date-content" dependency="JSTD|EDDT">
+                                <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2006-02</span><span dependency="JSTD+EDDT"> - </span><span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2010-09</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                            </div>
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txt-bold" id="FIELD_JTIT">Software Engineer</span>
+                            </span>
+                            <span class="paddedline locationGap txtItl" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">ICREON</span><span class="jobcity" id="FIELD_JCIT"></span><span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+                            <span class="jobline" id="FIELD_JDES"><ul>
+  <li>Coordinated with other engineers to evaluate and improve software and hardware interfaces.</li>
+  <li>Worked with software development and testing team members to design and develop robust solutions to meet client requirements for functionality, scalability, and performance.</li>
+  <li>Reviewed project specifications and designed technology solutions that met or exceeded performance expectations.</li>
+  <li>Coordinated efficient large-scale software deployments.</li>
+  <li>Updated old code bases to modern development standards, improving functionality.</li>
+  <li>Offered experience with Ruby, Perl, Java and Python.</li>
+</ul></span>
+                        </div>
+                    </div></div></div></div></div></div></div><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-EDUC"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_EDUCfc019355-62de-4766-bd0e-78e505283b67" class="section education SECTION_EDUC   multi-para has-title  " data-section-cd="EDUC"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_EDUC">Education<span title="Rename Education section" class="rename-section text-rename"></span></div></div><div class=""><div class="sortableInner"><div id="PARAGRAPH_EDUC_ad0a09a4-8ee4-789f-88fa-248168594fa1" class="paragraph datespara PARAGRAPH_EDUC firstparagraph  "><div class="clearfix doc-item">
+                        
+                        <div class="singlecolumn">
+                            <div class="paddedline date-content">
+                                <span class="jobdates" id="FIELD_GRST" format="%Y-%m"></span><span class="jobdates" id="FIELD_GRED" format="%Y-%m"></span>
+                            </div>
+                            <span class="paddedline degreeGap txt-bold" dependency="DGRE|STUY">
+                                <span class="degree" id="FIELD_DGRE">MBA</span><span dependency="DGRE+STUY">: </span><span class="programline" id="FIELD_STUY">Management Information Systems</span>
+                            </span>
+                            <div class="paddedline txtItl" dependency="SCIT|SSTA|SCHO">
+                                <span class="companyname" id="FIELD_SCHO">Sikkim Manipal University</span><span dependency="SCHO+SSTA|SCIT"> - </span><span class="joblocation jobcity" id="FIELD_SCIT">India</span><span class="joblocation jobstate" id="FIELD_SSTA"></span>
+                            </div>
+                            <span id="FIELD_FRFM"></span>
+                        </div>
+                    </div></div><div id="PARAGRAPH_EDUC_d4da90bb-3bbb-3191-1416-3f918d162a63" class="paragraph datespara PARAGRAPH_EDUC  "><div class="clearfix doc-item">
+                        
+                        <div class="singlecolumn">
+                            <div class="paddedline date-content">
+                                <span class="jobdates" id="FIELD_GRST" format="%Y-%m"></span><span class="jobdates" id="FIELD_GRED" format="%Y-%m"></span>
+                            </div>
+                            <span class="paddedline degreeGap txt-bold" dependency="DGRE|STUY">
+                                <span class="degree" id="FIELD_DGRE">Master of Arts</span><span dependency="DGRE+STUY">: </span><span class="programline" id="FIELD_STUY">Economics</span>
+                            </span>
+                            <div class="paddedline txtItl" dependency="SCIT|SSTA|SCHO">
+                                <span class="companyname" id="FIELD_SCHO">CSJM</span><span dependency="SCHO+SSTA|SCIT"> - </span><span class="joblocation jobcity" id="FIELD_SCIT">Kanpur, UP, India</span><span class="joblocation jobstate" id="FIELD_SSTA"></span>
+                            </div>
+                            <span id="FIELD_FRFM"></span>
+                        </div>
+                    </div></div></div></div></div></div></div><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-AFIL"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_AFIL69e38abc-c8c4-518f-768e-6870f4853a39" class="section SECTION_AFIL    has-title  " data-section-cd="AFIL"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_AFIL">Affiliations<span title="Rename Affiliations section" class="rename-section text-rename"></span></div></div><div class=""><div class=""><div id="PARAGRAPH_AFIL_9dee3b8a-eba3-0a67-248b-6bf77eec670d" class="paragraph PARAGRAPH_AFIL firstparagraph  "><div class="clearfix doc-item">
+                        <div class="singlecolumn" id="FIELD_FRFM"><ul>
+  <li>Project Management Institute</li>
+</ul></div>
+                    </div></div></div></div></div></div></div><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-CERT"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_CERT21e28f86-dd93-6ba4-d4da-b185a2208a28" class="section SECTION_CERT    has-title  " data-section-cd="CERT"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_CERT">Certifications<span title="Rename Certifications section" class="rename-section text-rename"></span></div></div><div class=""><div class="sortableInner"><div id="PARAGRAPH_CERT_b54f97c3-fa52-57ca-5f38-6fb060810b9f" class="paragraph datespara PARAGRAPH_CERT firstparagraph  "><div class="clearfix doc-item">
+                        <div class="paddedline date-content hidedates" dependency="DATE">
+                            <span class="jobdates">2007-03</span>
+                        </div>
+                        <div class="singlecolumn">
+                            <div class="paddedline date-content" dependency="DATE">
+                                <span class="jobdates" id="FIELD_DATE" format="%Y-%m">2017-05</span>
+                            </div>
+                            <div id="FIELD_FRFM"><p>CSM</p></div>
+                        </div>
+                    </div></div><div id="PARAGRAPH_CERT_99b7dd66-f8fd-f3a5-5147-be9bfabc4a08" class="paragraph datespara PARAGRAPH_CERT  "><div class="clearfix doc-item">
+                        <div class="paddedline date-content hidedates" dependency="DATE">
+                            <span class="jobdates">2007-03</span>
+                        </div>
+                        <div class="singlecolumn">
+                            <div class="paddedline date-content" dependency="DATE">
+                                <span class="jobdates" id="FIELD_DATE" format="%Y-%m">2022-10</span>
+                            </div>
+                            <div id="FIELD_FRFM"><p>SAfe Advance Scrum Master</p></div>
+                        </div>
+                    </div></div><div id="PARAGRAPH_CERT_46dfc0df-e437-a071-ec82-3150de01d02e" class="paragraph datespara PARAGRAPH_CERT  "><div class="clearfix doc-item">
+                        <div class="paddedline date-content hidedates" dependency="DATE">
+                            <span class="jobdates">2007-03</span>
+                        </div>
+                        <div class="singlecolumn">
+                            <div class="paddedline date-content" dependency="DATE">
+                                <span class="jobdates" id="FIELD_DATE" format="%Y-%m">2019-08</span>
+                            </div>
+                            <div id="FIELD_FRFM"><p>AZ-900, Microsoft</p></div>
+                        </div>
+                    </div></div><div id="PARAGRAPH_CERT_9c5e8205-224b-48f1-8457-c568823a189a" class="paragraph datespara PARAGRAPH_CERT  "><div class="clearfix doc-item">
+                        <div class="paddedline date-content hidedates" dependency="DATE">
+                            <span class="jobdates">2007-03</span>
+                        </div>
+                        <div class="singlecolumn">
+                            <div class="paddedline date-content" dependency="DATE">
+                                <span class="jobdates" id="FIELD_DATE" format="%Y-%m">2024-01</span>
+                            </div>
+                            <div id="FIELD_FRFM"><p>PMP (Project Management Professional)</p></div>
+                        </div>
+                    </div></div><div id="PARAGRAPH_CERT_3a8bbd04-530d-4818-b50c-0b6093f85db4" class="paragraph datespara PARAGRAPH_CERT  "><div class="clearfix doc-item">
+                        <div class="paddedline date-content hidedates" dependency="DATE">
+                            <span class="jobdates">2007-03</span>
+                        </div>
+                        <div class="singlecolumn">
+                            <div class="paddedline date-content" dependency="DATE">
+                                <span class="jobdates" id="FIELD_DATE" format="%Y-%m">2023-01</span>
+                            </div>
+                            <div id="FIELD_FRFM"><p>AWS Architecting Training</p></div>
+                        </div>
+                    </div></div></div></div></div></div></div><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-INTR"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_INTR36a42e77-0763-277c-2c25-3b5e8bf8b86c" class="section SECTION_INTR    has-title  " data-section-cd="INTR"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_INTR">Interests<span title="Rename Interests section" class="rename-section text-rename"></span></div></div><div class=""><div class=""><div id="PARAGRAPH_INTR_8d604e38-3b31-00aa-a3ba-b6237a54e5f5" class="paragraph PARAGRAPH_INTR firstparagraph  "><div class="clearfix doc-item">
+                        <div class="singlecolumn" id="FIELD_FRFM"><p>Reading, Volunteering, Photography, Travel</p></div>
+                    </div></div></div></div></div></div></div></div><div id="CONTAINER_2" class="right-box"><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-CNTC"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_CNTC572eb724-baef-433d-a28b-1e331eee4b01" class="section SECTION_CNTC notdraggable    has-title  " data-section-cd="CNTC"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_CNTC">Contact<span title="Rename Contact section" class="rename-section text-rename"></span></div></div><div class=""><div class=""><div id="PARAGRAPH_CNTC_94e36a25-6b32-f400-4005-6c198dd14a71" class="paragraph PARAGRAPH_CNTC firstparagraph  "><div class="clearfix doc-item">
+                        <div class="address">
+                            <div class="singlecolumn">
+                                <div dependency="STRT|CITY|STAT|ZIPC|ADDR">
+                                    <div class="txt-bold"><span class="xslt_static_change">Address </span></div>
+                                    <div id="FIELD_STRT"></div>
+                                    <span id="FIELD_CITY"></span>
+                                    <span id="FIELD_STAT"></span>
+                                    <span id="FIELD_ZIPC"></span>
+									<span id="FIELD_ADDR">Bellevue, Washington 98007</span>
+                                </div>
+                                <div class="txt-bold mt5" dependency="HPHN|CPHN"><span class="xslt_static_change">Phone </span></div>
+                                <div dependency="HPHN">
+                                    <span id="FIELD_HPHN">(425) 459 0221</span>
+                                </div>
+                                
+                                <div class="txt-bold mt5" dependency="EMAI"><span class="xslt_static_change">E-mail </span></div>
+                                <div dependency="EMAI" class="word-break">
+                                    <span id="FIELD_EMAI">pksingh.sme@gmail.com</span>
+                                </div>
+                                
+                                
+                                
+                                
+                                
+                                                                
+                                
+                                
+                                
+                                
+                            </div>
+                            
+                        </div>
+                    </div></div></div></div></div></div></div><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-HILT"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_HILTaa332187-74a6-40c6-8604-931c0376e7f7" class="section SECTION_HILT    has-title  " data-section-cd="HILT"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_HILT">Skills<span title="Rename Skills section" class="rename-section text-rename"></span></div></div><div class=""><div class="sortableInner"><div id="PARAGRAPH_HILT_714c6218-e79f-e4a9-e451-cc955826ce23" class="paragraph PARAGRAPH_HILT firstparagraph  "><div class="clearfix doc-item">
+                        <div class="singlecolumn maincolumn">
+                            <span class="paddedline" id="FIELD_SKC1"><ul><p>Prioritization</p></ul></span>
+                            
+                        </div>
+                    </div></div><div id="PARAGRAPH_HILT_8d9a888c-a079-4a97-65d6-ff05f5a59aed" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                        <div class="singlecolumn maincolumn">
+                            <span class="paddedline" id="FIELD_SKC1"><p>Project Management</p></span>
+                            
+                        </div>
+                    </div></div><div id="PARAGRAPH_HILT_b9e65703-389d-2853-1e35-34b44353199d" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                        <div class="singlecolumn maincolumn">
+                            <span class="paddedline" id="FIELD_SKC1"><p>Strategic Planning</p></span>
+                            
+                        </div>
+                    </div></div><div id="PARAGRAPH_HILT_3ab6674d-347e-cc8d-0424-0d02514aa090" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                        <div class="singlecolumn maincolumn">
+                            <span class="paddedline" id="FIELD_SKC1"><p>Vendor Sourcing</p></span>
+                            
+                        </div>
+                    </div></div><div id="PARAGRAPH_HILT_fec56248-05e8-839f-e442-b223f90fac8d" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                        <div class="singlecolumn maincolumn">
+                            <span class="paddedline" id="FIELD_SKC1"><p>Forward-Thinking Mindset</p></span>
+                            
+                        </div>
+                    </div></div><div id="PARAGRAPH_HILT_62047407-9bf4-de1d-1343-9f7b064a56cb" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                        <div class="singlecolumn maincolumn">
+                            <span class="paddedline" id="FIELD_SKC1"><p>Decision-Making Skills</p></span>
+                            
+                        </div>
+                    </div></div><div id="PARAGRAPH_HILT_e1c2f2e1-c19e-a6b2-93fe-12fcfacff1c7" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                        <div class="singlecolumn maincolumn">
+                            <span class="paddedline" id="FIELD_SKC1"><p>Technology Integration</p></span>
+                            
+                        </div>
+                    </div></div><div id="PARAGRAPH_HILT_cc7f6c36-c8e6-a489-76fa-ce5da000e571" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                        <div class="singlecolumn maincolumn">
+                            <span class="paddedline" id="FIELD_SKC1"><p>Stakeholder Communication</p></span>
+                            
+                        </div>
+                    </div></div><div id="PARAGRAPH_HILT_f239143c-9a90-dbfb-2e69-3b482c6dd9e2" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                        <div class="singlecolumn maincolumn">
+                            <span class="paddedline" id="FIELD_SKC1"><p>Engineering Design</p></span>
+                            
+                        </div>
+                    </div></div><div id="PARAGRAPH_HILT_149ee320-f63f-5316-8f18-cb4a1d7c457e" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                        <div class="singlecolumn maincolumn">
+                            <span class="paddedline" id="FIELD_SKC1"><p>Performance Testing</p></span>
+                            
+                        </div>
+                    </div></div><div id="PARAGRAPH_HILT_4219c5cc-5c73-9dbc-b77f-858f38704438" class="paragraph PARAGRAPH_HILT  "><div class="clearfix doc-item">
+                        <div class="singlecolumn maincolumn">
+                            <span class="paddedline" id="FIELD_SKC1"><p>Budget Coordination</p></span>
+                            
+                        </div>
+                    </div></div></div></div></div></div></div><div data-react-beautiful-dnd-draggable="5" class="sortable-item section-container SortableItem-sibling  data-SFTR"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_SFTRda9dc268-0758-1adf-7536-502568c879f7" class="section SECTION_SFTR    has-title  " data-section-cd="SFTR"><div class=" doc-item"><div class="heading"><div class="sectiontitle" id="SECTIONNAME_SFTR">Programming Langauges<span title="Rename Software section" class="rename-section text-rename"></span></div></div><div class=""><div class=""><div id="PARAGRAPH_SFTR_209c85c7-e03b-5e62-8c22-9b0e3b775b8f" class="paragraph PARAGRAPH_SFTR firstparagraph  "><div class="clearfix doc-item">
+                        <div class="singlecolumn" id="FIELD_FRFM"><p>Full stack (React, Node, PHP, MySQL, Javascript, MongoDB, HTML, CSS), Cloud(Azure, AWS) and iOS (Objective C, Swift)</p></div>
+                        
+                    </div></div></div></div></div></div></div></div></div></div><div></div></div></div><div class="track-horizontal" style="display: none; visibility: visible;"><div style="position: relative; display: block; height: 100%; cursor: pointer; border-radius: inherit; background-color: rgba(0, 0, 0, 0.2); width: 0px; transform: translateX(0px);"></div></div><div class="track-vertical" style="visibility: visible;"><div style="position: relative; display: block; width: 100%; cursor: pointer; border-radius: inherit; background-color: rgba(0, 0, 0, 0.2); height: 100px; transform: translateY(14.9805px);"></div></div></div></div>
