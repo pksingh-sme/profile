@@ -4,7 +4,7 @@
 ---
 
 ## Contact
-**Address**: Bellevue, WA 98007
+**Address**: Greater Seattle Area, Bellevue, WA 98007
 
 **Phone**: (425) 459 0221
 
